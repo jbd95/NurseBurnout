@@ -1,0 +1,125 @@
+.hidden{
+  visibility:hidden;
+}
+
+.visible{
+  visibility:visible;
+}
+.welcome-text{
+  font-family: Seville-Bold;
+  fill: #fc7753;
+}
+.mood-confirmation-text{
+  font-family: Seville-Bold;
+  fill: #403d58;
+  font-size: 40;
+}
+.mood-description-text{
+  font-family: Seville-Regular;
+  fill: #403d58;
+  font-size: 40;
+  text-anchor: middle;
+}
+.mood-title-main{
+  fill: #403d58;
+  font-family: Seville-Regular;
+  font-size: 26;
+}
+
+.great{
+  fill: #66d7d1;
+}
+.good{
+  fill: #dbd56e;
+}
+.ok{
+  fill: #a9b18f;
+}
+.neutral{
+  
+}
+.bad{
+  
+}
+.terrible{
+  
+}
+
+.purple-background
+{
+  fill: #403d58;
+}
+
+.pagedot-unhighlighted
+{
+   fill: #8f9091;
+}
+.sensordata-text
+{
+  font-family: Seville-Regular;
+  fill: white;
+  font-size: 50;
+  text-length: 6;
+}
+
+
+
+
+
+
+
+.sensor-label {
+  font-family: System-Regular;
+  fill: white;
+  text-anchor: middle;
+  text-length: 32;
+}
+
+.sensor-data {
+  font-family: System-Light;
+  fill: #00CED1;
+  text-anchor: middle;
+  text-length: 32;
+  font-size: 60;
+}
+
+.footsteps{
+  fill:white;
+}
+
+.heartrate
+{
+  fill: white;
+}
+
+.settingsicon
+{
+  fill:white;
+}
+
+.rotate180
+{
+  transform: rotate(180deg);
+}
+
+.white-label{
+  font-family: System-Regular;
+  fill: white;
+}
+
+.small-label{
+  font-family: System-Regular;
+  fill:white;
+  font-size: 28;
+  text-length: 32;
+}
+
+.medium-label{
+  font-family: System-Regular;
+  fill: white;
+  font-size:32;
+}
+
+#tumbler { x: 50%-55; }
+.item { height: 130; }
+.item text { font-size: 80; fill: white; x: 5;  }

@@ -1,0 +1,27 @@
+{
+  "fitbit": {
+    "appUUID": "93b7b0a1-5bef-4bc4-b015-03e1a83f3883",
+    "appType": "app",
+    "appDisplayName": "NurseBurnout",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity",
+      "access_user_profile",
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "NurseBurnout"
+      }
+    }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~1.0.0"
+  }
+}

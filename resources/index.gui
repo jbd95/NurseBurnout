@@ -1,0 +1,106 @@
+<svg>
+    <defs>
+      <link rel="stylesheet" href="styles.css" />
+    </defs>
+  
+   
+  <rect id="white-background" fill="#f2efea" height="250" width="348"/>
+   
+  <svg id="logo-screen" class="visible">
+      <image href="Pictures/logo300.png" width="90%" height="40%" x="5%" y="30%"/>
+  </svg>
+  
+  <svg id="welcome-screen" class="hidden">
+    <text class="welcome-text" x="25%" y = "47%" x="23%"> Goodmorning</text>
+    <text class="welcome-text" x="31%" y="63%"> Username</text>
+  </svg>
+  
+  <svg id="mood-confirmation-screen" class="hidden" pointer-events="visible">
+    <text class="mood-confirmation-text" x="16%" y="20%"> Current Mood </text>
+    <image id="mood-image-confirmation" href="Pictures/greatFace.png" height="45%" width="35%" x="33%" y="30%" />
+    <text id="mood-description-confirmation"class="mood-description-text" x="50%" y="90%"> great </text>
+    <image id="mood-yes-confirmation" href="Pictures/Yes.png" width="28%" height="36%" x="73%" y="65%" pointer-events="visible"/>
+    <image id="mood-no-confirmation" href="Pictures/No.png" width="28%" height="36%" x="0%" y="65%" pointer-events="visible"/>
+  </svg>
+  
+  <svg id="mood-logged-screen" class="hidden">
+    <image id="mood-logged-checkmark" href="Pictures/CheckMark.png" class="good" width="20%" height="25%" x="40%" y="65%" />
+    <!--<rect class="ok" width="25%" height="25%" x="37%" y="65%"/>-->
+    <text class="mood-confirmation-text" x="37%" y="35%"> Mood </text>
+    <text class="mood-confirmation-text" x="32%" y="55%"> Logged </text>
+  </svg>
+  
+  <svg id="mood-main-screen" class="hidden">
+    <rect class="purple-background" width="65%" height="100%" x="40%"/>
+    <text class="mood-title-main" x="5%" y="20%"> My Mood </text>
+    <image id="mood-image-main" href="Pictures/greatFace.png" height="37%" width="27%" x="7%" y="30%" />
+    <image id="mood-edit-main" href="Pictures/edit.png" width="23%" height="33%" x="0%" y="70%" pointer-events="visible"/>
+    <svg width="60%" height="100%" x="40%" y="0%">
+      <text id="mood-hr-main" x="10%" y="25%" class="sensordata-text"> 100hr </text>
+      <image href="Pictures/hrPicture.png" x="77%" y="10%" width="21%" height="16%" />
+    </svg>
+    <svg width="60%" height="100%" x="40%" y="0%">
+      <text id="mood-steps-main" x="10%" y="55%" text-length="8" class="sensordata-text"> 0 </text>
+      <image href="Pictures/stepsPicture.png" x="77%" y="40%" width="21%" height="16%" />
+    </svg>
+    <svg width="60%" height="100%" x="40%" y="0%">
+      <text id="mood-sleep-main" x="18%" y="85%" class="sensordata-text">  </text>
+      <image class="great" href="Pictures/signalPicture.png" x="77%" y="70%" width="21%" height="16%" />
+    </svg>
+  </svg>
+  
+  <svg id="mood-selection-screen" class="hidden" pointer-events="visible">
+    
+    
+    <svg>
+       <use id='mood-panorama-page' href='#panoramaview' overflow='hidden' class="hidden" pointer-events="visible">
+          <use id="first-item" href="#panoramaview-item">
+            <image id="img" href="Pictures/greatFace.png" width="35%" height="45%" x="33%" y="30%" load="sync" />
+            <text id="text" class="mood-description-text" x="50%" y="92%" text-anchor="middle"> great </text>
+          </use>        
+          <use id="item2" href="#panoramaview-item">
+            <image id="img" href="Pictures/goodFace.png" width="35%" height="45%" x="33%" y="30%" load="sync" />
+            <text id="text" class="mood-description-text" x="50%" y="92%" text-anchor="middle"> good </text>
+          </use>        
+          <use id="item3" href="#panoramaview-item">
+            <image id="img" href="Pictures/okFace.png" width="35%" height="45%" x="33%" y="30%" load="sync" />
+            <text id="text" class="mood-description-text" x="50%" y="92%" text-anchor="middle"> okay </text>
+          </use>
+         <use id="item4" href="#panoramaview-item">
+            <image id="img" href="Pictures/neutralFace.png" width="35%" height="45%" x="33%" y="30%" load="sync" />
+            <text id="text" class="mood-description-text" x="50%" y="92%" text-anchor="middle"> neutral </text>
+          </use>
+         <use id="item5" href="#panoramaview-item">
+            <image id="img" href="Pictures/badFace.png" width="35%" height="45%" x="33%" y="30%" load="sync" />
+            <text id="text" class="mood-description-text" x="50%" y="92%" text-anchor="middle"> bad </text>
+          </use>
+         <use id="last-item" href="#panoramaview-item">
+            <image id="last-item-image" href="Pictures/terribleFace.png" width="35%" height="45%" x="33%" y="30%" load="sync" />
+            <text id="text" class="mood-description-text" x="50%" y="92%" text-anchor="middle"> terrible </text>
+         </use>
+           
+          <!-- Have enough dots for your slides (extras are hidden) -->
+          <use id='pagination-dots' class='pagination' href='#pagination-widget' y="76%">
+            <use href='#pagination-dot' class="pagedot-unhighlighted"/>
+            <use href='#pagination-dot' class="pagedot-unhighlighted"/>
+            <use href='#pagination-dot' class="pagedot-unhighlighted"/>
+            <use href='#pagination-dot' class="pagedot-unhighlighted"/>
+            <use href='#pagination-dot' class="pagedot-unhighlighted"/>
+            <use href='#pagination-dot' class="pagedot-unhighlighted"/>
+            <use href='#pagination-dot' class="pagedot-unhighlighted"/>
+            <use href='#pagination-highlight-dot' class="purple-background"/>
+        </use>
+      </use>
+    </svg>
+    
+    
+    <text class="mood-confirmation-text" x="16%" y="20%"> Current Mood </text>
+    <image id="mood-yes-selection" href="Pictures/Yes.png" width="28%" height="36%" x="73%" y="65%" pointer-events="visible"/>
+    <image id="mood-no-selection" href="Pictures/No.png" width="28%" height="36%" x="0%" y="65%" pointer-events="visible"/>
+
+      
+  </svg>
+  
+
+</svg>
+  
