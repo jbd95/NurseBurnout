@@ -13,13 +13,18 @@ var isPrompt = 0;
 // uploads the user's id, heart rate, steps, and current mood to the server
 function uploadDataToServer(id="", hr="", steps="", mood="") 
 {
+      console.log("about to upload")
      // create and send a new get request to upload the data to the server
-     xhr = new XMLHttpRequest();
-     xhr.open('GET', "SERVER NAME HERE" + id +  "&rate=" + hr + "&steps=" + steps + "&mood=" + mood, true);
-     xhr.send();
+     /*xhr = new XMLHttpRequest();
+     xhr.open('GET', 'https://jamesrbrady.com/fitbit/?id=' + id +  "&rate=" + hr + "&steps=" + steps + "&mood=" + mood, true);
+     xhr.send();*/
+  
+    fetch('https://jamesrbrady.com/fitbit/?id=' + id +  "&rate=" + hr + "&steps=" + steps + "&mood=" + mood).then(function(response) {
+        sendDataToWatchApp("response", JSON.stringify(response.json())); 
+    })
      
      // set processRequest as the callback
-     xhr.onreadystatechange = processRequest;
+     //xhr.onreadystatechange = processRequest;
 }
 
 //Function that recieves the response from the server and forwards it to the watch
